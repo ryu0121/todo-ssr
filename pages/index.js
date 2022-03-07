@@ -28,7 +28,7 @@ const Home = ({allTodos}) => {
 }
 export default Home;
 
-export const getStaticProps = () => {
+export const getServerSideProps = () => {
   const allTodos = getTodosFromDB()
   return {
     // allTodos: [...] の省略形

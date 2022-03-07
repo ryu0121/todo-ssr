@@ -25,7 +25,7 @@ const Todo = ({ todo }) => {
 export default Todo;
 
 // params には [id].js を参照して idキー が入っている
-export const getStaticProps = ({ params }) => {
+export const getServerSideProps = ({ params }) => {
   const todo = getTodoFromDB(params.id)
   return {
     props: {
